@@ -19,7 +19,6 @@ multiple `BackingStore` implementations.
 3. The modularity of the design makes it really easy to Unit Test.
 
 4. It is easy to add an in-memory implementation of the backing store, useful for testing purposes.
-5.
 
 ### Shortcomings
 
