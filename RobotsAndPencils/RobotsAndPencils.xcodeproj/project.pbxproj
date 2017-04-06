@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DE2C12371E96A4F800B7EB7D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C12361E96A4F800B7EB7D /* main.swift */; };
+		DE2C123E1E96A75E00B7EB7D /* RPComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C123D1E96A75E00B7EB7D /* RPComment.swift */; };
+		DE2C12411E96A77F00B7EB7D /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C12401E96A77F00B7EB7D /* Serialization.swift */; };
+		DE2C12431E96A82300B7EB7D /* RemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C12421E96A82300B7EB7D /* RemoteStore.swift */; };
+		DE2C12451E96A95C00B7EB7D /* RPAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C12441E96A95C00B7EB7D /* RPAnnotation.swift */; };
+		DE2C12471E96AE3900B7EB7D /* BackingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C12461E96AE3900B7EB7D /* BackingStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		DE2C12331E96A4F800B7EB7D /* RobotsAndPencils */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobotsAndPencils; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2C12361E96A4F800B7EB7D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DE2C123D1E96A75E00B7EB7D /* RPComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPComment.swift; sourceTree = "<group>"; };
+		DE2C12401E96A77F00B7EB7D /* Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
+		DE2C12421E96A82300B7EB7D /* RemoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStore.swift; sourceTree = "<group>"; };
+		DE2C12441E96A95C00B7EB7D /* RPAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPAnnotation.swift; sourceTree = "<group>"; };
+		DE2C12461E96AE3900B7EB7D /* BackingStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackingStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,22 @@
 		DE2C12351E96A4F800B7EB7D /* RobotsAndPencils */ = {
 			isa = PBXGroup;
 			children = (
+				DE2C123F1E96A77600B7EB7D /* Serialization */,
 				DE2C12361E96A4F800B7EB7D /* main.swift */,
+				DE2C123D1E96A75E00B7EB7D /* RPComment.swift */,
+				DE2C12441E96A95C00B7EB7D /* RPAnnotation.swift */,
 			);
 			path = RobotsAndPencils;
+			sourceTree = "<group>";
+		};
+		DE2C123F1E96A77600B7EB7D /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C12401E96A77F00B7EB7D /* Serialization.swift */,
+				DE2C12421E96A82300B7EB7D /* RemoteStore.swift */,
+				DE2C12461E96AE3900B7EB7D /* BackingStore.swift */,
+			);
+			name = Serialization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +144,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2C12371E96A4F800B7EB7D /* main.swift in Sources */,
+				DE2C12431E96A82300B7EB7D /* RemoteStore.swift in Sources */,
+				DE2C12411E96A77F00B7EB7D /* Serialization.swift in Sources */,
+				DE2C12451E96A95C00B7EB7D /* RPAnnotation.swift in Sources */,
+				DE2C123E1E96A75E00B7EB7D /* RPComment.swift in Sources */,
+				DE2C12471E96AE3900B7EB7D /* BackingStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
