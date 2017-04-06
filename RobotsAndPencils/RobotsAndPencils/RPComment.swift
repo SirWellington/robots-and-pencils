@@ -8,22 +8,46 @@
 
 import Foundation
 
-class RPComment: Serializable {
+class RPComment : Serializable {
     
-    var id: String {
-        return "comment-id"
-    }
+    var id: String
+    var comment: String
+    var author: String
     
-    init() {
+    init(id: String, comment: String, author: String) {
         
+        self.id = id
+        self.comment = comment
+        self.author = author
     }
     
     required init?(dictionary: NSDictionary) {
-        //Pull out a field from a dictionary
+        
+        guard let id = dictionary[Keys.ID] as? String,
+              let comment = dictionary[Keys.COMMENT] as? String,
+              let author = dictionary[Keys.AUTHOR] as? String
+        else {
+            return nil
+        }
+        
+        self.id = id
+        self.comment = comment
+        self.author = author
     }
     
     func serialize() -> NSDictionary {
-        return [:]
+        return [
+            Keys.ID : id,
+            Keys.AUTHOR : author,
+            Keys.COMMENT : comment
+        ]
     }
+
+}
+
+private class Keys {
     
+    static let ID = "id"
+    static let COMMENT = "comment"
+    static let AUTHOR = "author"
 }
