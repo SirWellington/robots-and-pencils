@@ -79,8 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				DE2C12401E96A77F00B7EB7D /* Serialization.swift */,
-				DE2C12421E96A82300B7EB7D /* RemoteStore.swift */,
 				DE2C12461E96AE3900B7EB7D /* BackingStore.swift */,
+				DE2C12421E96A82300B7EB7D /* RemoteStore.swift */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";

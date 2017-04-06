@@ -10,8 +10,8 @@ import Foundation
 
 
 /**
- The BackingStore uses the Strategy Pattern, allowing different implementations to be used,
- and swapped at runtime.
+    The BackingStore uses the Strategy Pattern, allowing different implementations to be used,
+    and swapped at runtime.
  */
 protocol BackingStore {
     
